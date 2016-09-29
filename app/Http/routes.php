@@ -35,3 +35,7 @@ Route::put('prueba', function (){
 Route::delete('prueba', function (){
     return "DELETE!!!";
 });
+
+// Ruta que responde por controlador
+Route::get('controlador', 'PruebaController@nombreFuncion');
+
