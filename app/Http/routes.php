@@ -37,5 +37,5 @@ Route::delete('prueba', function (){
 });
 
 // Ruta que responde por controlador
-Route::get('controlador', 'PruebaController@nombreFuncion');
+Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion');
 
