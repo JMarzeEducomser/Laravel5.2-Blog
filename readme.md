@@ -19,13 +19,21 @@ Código de Alumno | Asistencia (25) | TI-01 (XX.X) | Examen Final (40) | Nota Fi
 
 ## Comandos Artisan
 
-Crear un nuevo proyecto Laravel 5.2
+Crear un proyecto Laravel 5.2
 ```javascript
 composer create-project --prefer-dist laravel/laravel nombreCarpetaDestino "5.2.*"
 ```
 Ejecutar el Servidor Artisan:
 ```javascript
 php artisan serve
+```
+Crear un Controlador
+```javascript
+php artisan make:controller SingularController
+```
+Ejecutar las migraciones
+```javascript
+php artisan migrate
 ```
 
 ## Facilitador
