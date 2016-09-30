@@ -10,6 +10,8 @@ Recuerda revisar la documentación para reforzar los conocimientos impartidos [L
 
 Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 
+1. Definir los campos escenciales de las tablas para el proyecto blog.
+
 ## Notas Parciales
 
 Código de Alumno | Asistencia (25) | TI-01 (XX.X) | Examen Final (40) | Nota Final 
