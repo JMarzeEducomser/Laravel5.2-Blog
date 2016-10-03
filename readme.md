@@ -29,11 +29,19 @@ php artisan serve
 ```
 Crear un Controlador
 ```javascript
-php artisan make:controller SingularController
+php artisan make:controller NombreSingularController
 ```
 Ejecutar las migraciones
 ```javascript
 php artisan migrate
+```
+Crear una migración
+```javascript
+php artisan make:migration crate_entidadPlural_table --create=entidadPlural
+```
+Crear un Modelo
+```javascript
+php artisan make:model EntidadSingular
 ```
 
 ## Facilitador
