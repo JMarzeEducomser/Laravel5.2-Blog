@@ -14,4 +14,9 @@ class Tag extends Model
 
     // No timestamps
     public $timestamps = false;
+
+    // Relationships
+    public function posts(){
+        return $this->belongsToMany('Blog\Tag', 'post_tag', 'tag_id', 'post_codigo');
+    }
 }

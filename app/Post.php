@@ -18,4 +18,13 @@ class Post extends Model
     public $incrementing = false;
 
     protected $fillable = ['codigo', 'titulo', 'contenido', 'publicado', 'categoria_id'];
+
+    // Relationships
+    public function categoria(){
+        return $this->belongsTo('Blog\Categoria');
+    }
+
+    public function tags(){
+        return $this->belongsToMany('Blog\Tag', 'post_tag', 'post_codigo', 'tag_id');
+    }
 }
