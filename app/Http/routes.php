@@ -39,3 +39,7 @@ Route::delete('prueba', function (){
 // Ruta que responde por controlador
 Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion');
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
