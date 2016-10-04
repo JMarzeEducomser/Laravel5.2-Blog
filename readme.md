@@ -34,6 +34,8 @@ php artisan make:controller NombreSingularController
 Ejecutar las migraciones
 ```javascript
 php artisan migrate
+php artisan migrate --seed
+php artisan migrate:refresh --seed
 ```
 Crear una migración
 ```javascript
@@ -42,6 +44,10 @@ php artisan make:migration crate_entidadPlural_table --create=entidadPlural
 Crear un Modelo
 ```javascript
 php artisan make:model EntidadSingular
+```
+Crear un Seeder
+```javascript
+php artisan make:seeder EntidadPluralTableSeeder
 ```
 
 ## Facilitador
