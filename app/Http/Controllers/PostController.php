@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use Blog\Http\Requests;
 
+// Modelos a utilizar en el controlador
+use Blog\Post;
+
 class PostController extends Controller
 {
     /**
@@ -15,7 +18,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::get();
+        //dd($posts);
+        return view('post.index')->with('posts', $posts);
     }
 
     /**
