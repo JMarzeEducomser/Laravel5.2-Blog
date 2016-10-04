@@ -11,6 +11,7 @@ Recuerda revisar la documentación para reforzar los conocimientos impartidos [L
 Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 
 1. Definir los campos escenciales de las tablas para el proyecto blog.
+2. Describir los tipos de encriptación que tiene Laravel.
 
 ## Notas Parciales
 
