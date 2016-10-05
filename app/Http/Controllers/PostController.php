@@ -8,6 +8,7 @@ use Blog\Http\Requests;
 
 // Modelos a utilizar en el controlador
 use Blog\Post;
+use Blog\Categoria;
 
 // API Carbon
 use Carbon\Carbon;
@@ -36,7 +37,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $categorias = Categoria::orderBy('nombre', 'ASC')->lists('nombre', 'id');
+        //dd($categorias);
+        return view('post.create')->with('categorias', $categorias);
     }
 
     /**
@@ -47,7 +50,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**

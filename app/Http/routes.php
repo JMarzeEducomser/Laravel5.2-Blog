@@ -39,8 +39,10 @@ Route::delete('prueba', function (){
 // Ruta que responde por controlador
 Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion');
 
-// Rutas para CRUD de Post
-Route::resource('post', 'PostController');
+Route::group(['prefix' => 'admin'], function() {
+    // Rutas para CRUD de Post
+    Route::resource('post', 'PostController');
+});
 
 
 Route::auth();
