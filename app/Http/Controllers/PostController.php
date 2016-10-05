@@ -9,8 +9,14 @@ use Blog\Http\Requests;
 // Modelos a utilizar en el controlador
 use Blog\Post;
 
+// API Carbon
+use Carbon\Carbon;
+
 class PostController extends Controller
 {
+    public function __construct(){
+        Carbon::setLocale('es');
+    }
     /**
      * Display a listing of the resource.
      *
