@@ -50,6 +50,10 @@ Crear un Seeder
 ```javascript
 php artisan make:seeder EntidadPluralTableSeeder
 ```
+Crear un Request
+```javascript
+php artisan make:request EntidadSingularRequest
+```
 
 ## Facilitador
 
