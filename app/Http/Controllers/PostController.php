@@ -5,6 +5,8 @@ namespace Blog\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Blog\Http\Requests;
+// PostRequest
+use Blog\Http\Requests\PostRequest;
 
 // Modelos a utilizar en el controlador
 use Blog\Post;
@@ -48,7 +50,7 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
         $post = new Post($request->all());
         //$post->codigo = $request['codigo'];
