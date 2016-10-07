@@ -13,11 +13,14 @@ Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 1. Definir los campos escenciales de las tablas para el proyecto blog.
 2. Describir los tipos de encriptación que tiene Laravel.
 3. Implementar la mejora de validación en el formulario de creación de un Post.
+4. Implementar CRUD en la entidad CATEGORIA (basado en CRUD de POST).
 
 ## Notas Parciales
 
-Código de Alumno | Asistencia (25) | TI-01 (XX.X) | Examen Final (40) | Nota Final 
----------------- | :-------------: | :----------: | :---------------: | :--------: 
+Código de Alumno | Asistencia (25) | TI-01 (XX.X) | TI-02 (XX.X) | TI-03 (XX.X) | TI-04 (XX.X) | Examen Final (40) | Nota Final 
+---------------- | :-------------: | :----------: | :----------: | :----------: | :----------: | :---------------: | :--------: 
+VCL131279 | | | | | | |
+JCR260991 | | | | | | |
 
 ## Comandos Artisan
 
