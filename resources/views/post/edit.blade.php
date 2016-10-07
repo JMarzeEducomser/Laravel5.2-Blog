@@ -11,6 +11,21 @@
                 </div>
 
                 <div class="panel-body">
+
+                    @include('post.partial.validation')
+
+                    {!! Form::model($post, ['route' => ['admin.post.update', $post->codigo], 'method' => 'PUT', 'class' => 'form-horizontal']) !!}
+
+                    @include('post.partial.form')
+
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-4">
+                            <input type="submit" value="Guardar cambios" class="btn btn-warning"/>
+                        </div>
+                    </div>
+
+                    {!! Form::close() !!}
+
                 </div>
 
             </div>

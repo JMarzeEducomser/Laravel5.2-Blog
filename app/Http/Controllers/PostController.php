@@ -90,9 +90,13 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostRequest $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->fill($request->all());
+        $post->update();
+
+        return redirect()->route('admin.post.index');
     }
 
     /**
