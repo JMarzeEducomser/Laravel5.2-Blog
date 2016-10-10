@@ -14,6 +14,7 @@ Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 2. Describir los tipos de encriptación que tiene Laravel.
 3. Implementar la mejora de validación en el formulario de creación de un Post.
 4. Implementar CRUD en la entidad CATEGORIA (basado en CRUD de POST).
+5. Implementar la ordenación a través de los campos Código, Título y Categoría.
 
 ## Notas Parciales
 
