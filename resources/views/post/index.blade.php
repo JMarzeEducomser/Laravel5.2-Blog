@@ -17,6 +17,16 @@
                     </a>
                     <hr/>
 
+                    {!! Form::open(['route' => 'admin.post.index', 'method' => 'GET']) !!}
+                    <div class="input-group">
+                        {!! Form::text('buscar_post', null, ['placeholder' => 'Buscar post por código o título...', 'class' => 'form-control']) !!}
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
+                    {!! Form::close() !!}
+                    <hr/>
+
                     <table class="table table-hover">
                         <tr class="table-header">
                             <th>Código</th>

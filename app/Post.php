@@ -19,6 +19,12 @@ class Post extends Model
 
     protected $fillable = ['codigo', 'titulo', 'contenido', 'publicado', 'categoria_id'];
 
+    // Scopes
+    //public function scopeNombre(){}
+    public function scopeLikePost($query, $criterio){
+        return $query->where('codigo', 'LIKE', "%$criterio%")->orWhere('titulo', 'LIKE', "%$criterio%");
+    }
+
     // Relationships
     public function categoria(){
         return $this->belongsTo('Blog\Categoria');
