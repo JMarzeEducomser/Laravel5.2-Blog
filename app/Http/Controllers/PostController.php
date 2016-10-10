@@ -27,8 +27,12 @@ class PostController extends Controller
      */
     public function index(Request $request)
     {
-        $posts = Post::likePost($request->buscar_post)->orderBy('created_at', 'DESC')->paginate(5);
-        //dd($posts);
+        if($request->buscar_post != ''){
+            $posts = Post::likePost($request->buscar_post)->orderBy('created_at', 'DESC')->paginate(5);
+            $posts->appends(['buscar_post' => $request->buscar_post]);
+        }else{
+            $posts = Post::orderBy('created_at', 'DESC')->paginate(5);
+        }
         return view('post.index')->with('posts', $posts);
     }
 
