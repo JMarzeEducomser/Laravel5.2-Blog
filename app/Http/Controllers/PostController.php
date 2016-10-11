@@ -15,6 +15,9 @@ use Blog\Categoria;
 // API Carbon
 use Carbon\Carbon;
 
+// Response
+use Illuminate\Http\Response;
+
 class PostController extends Controller
 {
     public function __construct(){
@@ -122,5 +125,13 @@ class PostController extends Controller
         $post->delete();
 
         return redirect()->route('admin.post.index');
+    }
+
+    /**
+     *
+     */
+    public function getImagen($nombreImagen){
+        $imagen = \Storage::disk('local')->get($nombreImagen);
+        return new Response($imagen, 200);
     }
 }
