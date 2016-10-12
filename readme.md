@@ -16,6 +16,7 @@ Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 4. Implementar CRUD en la entidad CATEGORIA (basado en CRUD de POST).
 5. Implementar la ordenación a través de los campos Código, Título y Categoría.
 6. Modificar el reporte para mostrar un LOGO y la imagen de cada post, además de hacer el cambio en las fechas de creación y modificación (hace 3 días).
+7. Listar los cambios para un inicio de sesión a través del nombre de usuario (campo 'name' en la tabla 'users').
 
 ## Notas Parciales
 
