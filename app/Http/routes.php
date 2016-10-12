@@ -37,9 +37,9 @@ Route::delete('prueba', function (){
 });
 
 // Ruta que responde por controlador
-Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion');
+Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion')->middleware('auth');
 
-Route::group(['prefix' => 'admin'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     // Rutas para CRUD de Post
     Route::resource('post', 'PostController');
 });
@@ -48,7 +48,7 @@ Route::group(['prefix' => 'admin'], function() {
 Route::get('post/{nombreImagen}', 'PostController@getImagen')->name('post.imagen');
 
 // Ruta para PDF
-Route::get('post/{post}/reporte', 'PdfController@reporte')->name('post.reporte');
+Route::get('post/{post}/reporte', 'PdfController@reporte')->name('post.reporte')->middleware('admin');
 
 Route::auth();
 
