@@ -42,6 +42,8 @@ Route::get('controlador/{parametro?}', 'PruebaController@nombreFuncion')->middle
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     // Rutas para CRUD de Post
     Route::resource('post', 'PostController');
+    // Rutas para CRUD de Tag
+    Route::resource('tag', 'TagController');
 });
 
 // Ruta para acceder a los archivos de imagen (Storage)
