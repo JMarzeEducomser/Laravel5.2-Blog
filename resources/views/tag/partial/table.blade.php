@@ -16,6 +16,7 @@
 {{ $tags->render() }}
 
 @section('script')
+@parent
 <script>
     // Paginación
     $(document).on('click', '.pagination a', function(e){

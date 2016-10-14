@@ -8,6 +8,8 @@ use Blog\Http\Requests;
 
 use Blog\Tag;
 
+use Blog\Http\Requests\TagRequest;
+
 class TagController extends Controller
 {
     /**
@@ -44,9 +46,25 @@ class TagController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TagRequest $request)
     {
-        //
+        if($request->ajax()){
+            try{
+                $tag = new Tag($request->all());
+                $tag->save();
+
+                flash('Se agregó el tag: '.$tag->nombre, 'success')->important();
+
+                return response()->json([
+                    'mensaje' => $tag->id,
+                ]);
+            }catch(\Exception $ex){
+                flash('Error al agregar...', 'danger')->important();
+                return response()->json([
+                    'mensaje' => $ex->getMessage(),
+                ]);
+            }
+        }
     }
 
     /**

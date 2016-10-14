@@ -31,4 +31,6 @@
     </div>
 </div>
 
+@include('tag.partial.create')
+
 @endsection
