@@ -21,10 +21,10 @@ Todos los trabajos deben ser enviados por correo electrónico en formato texto.
 
 ## Notas Parciales
 
-Código de Alumno | Asistencia (25) | TI-01 (XX.X) | TI-02 (XX.X) | TI-03 (XX.X) | TI-04 (XX.X) | Examen Final (40) | Nota Final 
----------------- | :-------------: | :----------: | :----------: | :----------: | :----------: | :---------------: | :--------: 
-VCL131279 | | | | | | |
-JCR260991 | | | | | | |
+Código de Alumno | Asistencia (25) | TI-1 (4.5) | TI-2 (4.5) | TI-3 (4.5) | TI-4 (4.5) | TI-5 (4.5) | TI-6 (4.5) | TI-7 (4.5) | TI-8 (4.5) | Examen Final (40) | Extras | Nota Final (100)
+--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
+VCL131279 ||||||||||||
+JCR260991 ||||||||||||
 
 ## Comandos Artisan
 

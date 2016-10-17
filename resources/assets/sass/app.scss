@@ -1,2 +1,11 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$color_principal: crimson;
+
+body{
+    background-color: $color_principal;
+}
+
+h1{
+    color: $color_principal;
+}
